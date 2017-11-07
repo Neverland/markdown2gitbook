@@ -32,14 +32,14 @@ module.exports = () => {
         }
 
         let args = PROGRAM.args[0];
-        let gitbook = args.gitbook;
+        let create = args.create;
 
         // create doc!
 
         PROGRESS.set('text', 'Start generating...')
             .start();
 
-        if (gitbook) {
+        if (create) {
             // gitbook -h 用来检测是否安装了gitbook-cli
             RUN('gitbook', ['-h'])
                 .catch(error => {
