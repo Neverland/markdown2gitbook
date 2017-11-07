@@ -10,13 +10,13 @@
 
 'use strict';
 
-process.env.NODE_PATH = __dirname + '/../node_modules/';
+process.env.NODE_PATH = __dirname + '/node_modules/';
 
 
 const PROGRAM = require('commander');
 
 PROGRAM
-    .version(require('../package').version );
+    .version(require('./package').version );
 
 PROGRAM
     .usage('[option] [...value]');
@@ -28,7 +28,7 @@ PROGRAM
     .option('-s, --server [boolean]', 'server start')
     .alias('d')
     .action(() => {
-        require('../command/doc/cli')();
+        require('./command/doc/cli')();
     });
 
 PROGRAM.parse(process.argv);

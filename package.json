@@ -1,9 +1,10 @@
 {
   "name": "auto-gitbook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Markdown auto to gitbook",
   "main": "index.js",
   "scripts": {
+    "postinstall": "node ./figlet/index.js --harmory",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
