@@ -1,0 +1,12 @@
+<!-- 很重要，不要改动 -->
+<!-- for: ${data} as ${item}, ${key} -->
+* [${key}](${url}${key}/README.md)
+    <!-- for: ${item} as ${val} -->
+    <!-- if: ${val.length} === 1 -->
+    * [${val[0]}](${url}${key}/${val[0]}/README.md)
+    <!-- else -->
+    <!-- var: path = ${val}.toString().replace(/,/g, '/'); -->
+        * [${path}](${url}${key}/${path}/README.md)
+    <!-- /if -->
+    <!-- /for -->
+<!-- /for -->
