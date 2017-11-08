@@ -8,7 +8,7 @@ Auto markdown convert gitbook
 ## Dependence
     gitbook-cli
 ```
-    npm install git-book -g
+    npm install gitbook-cli -g
 ```
 ## Install
 

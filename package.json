@@ -1,6 +1,6 @@
 {
   "name": "auto-gitbook",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Markdown auto to gitbook",
   "main": "index.js",
   "scripts": {
